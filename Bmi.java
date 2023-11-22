@@ -5,13 +5,11 @@ public class Bmi {
         for(int n = 0;n < 2; n++){
 
             System.out.println("身長");
-            int height =Integer.parseInt(sc.nextLine());
-            double dh =height;
+             double height =sc.nextDouble();
             System.out.println("体重");
-            int weight =Integer.parseInt(sc.nextLine());
-            double dw = weight;
+            double weight =sc.nextDouble();
             System.out.println("BMI");
-            double BMI =(dh / (dw*dw));
+            double BMI =(height / (weight*weight));
             System.out.println(String.format("%.2f",BMI));
         }
     }
