@@ -9,7 +9,7 @@ public class Bmi {
             System.out.println("体重");
             double weight =sc.nextDouble();
             System.out.println("BMI");
-            double BMI =(height / (weight*weight));
+            double BMI =(weight / (height*height));
             System.out.println(String.format("%.2f",BMI));
         }
     }
